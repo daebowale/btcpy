@@ -377,7 +377,7 @@ De esta forma, si volvermos a obtener el blockchain de por ejemplo, el ordenador
 
 Aquí vale la pena hacer una pausa para comentar estos resultados:
 
-1. El tiempo de minado de un bloque en un mismo ordenador no es constante entre bloques. Esto se debe porque el nonce buscado es aleatorio, en algún caso se obtiene muy pronto y en otros demora un poco más. Es por esta razón que se toma un promedio de este tiempo. ==En Bitcoin la dificultad varía deacuerdo con este tiempo promedio, que debe ser aproximado a los ~10 min. por bloque==. Si en promedio el bloque demora menos de 10 min. la dificultad sube, y si demora más la dificultad baja. 
+1. El tiempo de minado de un bloque en un mismo ordenador no es constante entre bloques. Esto se debe porque el nonce buscado es aleatorio, en algún caso se obtiene muy pronto y en otros demora un poco más. Es por esta razón que se toma un promedio de este tiempo. <font color="green"> En Bitcoin la dificultad varía deacuerdo con este tiempo promedio, que debe ser aproximado a los ~10 min. por bloque </font>. Si en promedio el bloque demora menos de 10 min. la dificultad sube, y si demora más la dificultad baja. 
 2. Cada cadena en los ejemplos es válida, pero la diferencia del tiempo en obtenerlas hace que una pueda creecer mas rápido que la otra. Esto se debe a que el poder de computo de un Intel i7 es muy superior a un Armv7. 
 
 En este caso ejemplo, para mostrar la sincronización minamos en el ordenador 2 (Raspberry pi) diez bloques para mostrar la ventaja:
@@ -391,7 +391,7 @@ En este caso ejemplo, para mostrar la sincronización minamos en el ordenador 2 
 
 ### Agregando Nodos
 
-Hasta este momento ambas cadenas son válidas pero distintas entre ambas. Se busca tener ==una sola cadena== para lo cual ambos nodos deben saber de la existencia del otro.
+Hasta este momento ambas cadenas son válidas pero distintas entre ambas. Se busca tener  <font color="green"> una sola cadena </font> para lo cual ambos nodos deben saber de la existencia del otro.
 
 Para lo cual añadimos la dirección:
 
