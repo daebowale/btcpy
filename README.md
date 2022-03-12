@@ -54,9 +54,7 @@ Para poder facilitar la legibilidad del código se dividió el proyecto en dos s
 
 ## Block of Blockchain
 
-El principal componente base de un blockchain (cadena de bloques, en español) es el bloque. 
-
-Este es simplemente un conjunto de información en texto plano que contiene los siguientes campos que un bloque debe contener:
+El principal componente base de un blockchain (cadena de bloques, en español) es el bloque. Este, es simplemente un conjunto de información en texto plano que contiene las siguientes categorías:
 	
 	indice - Muestra la posición del bloque en el orden que se añade al blockchain.
 	
