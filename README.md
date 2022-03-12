@@ -56,7 +56,7 @@ Para poder facilitar la legibilidad del código se dividió el proyecto en dos s
 
 El principal componente base de un blockchain (cadena de bloques, en español) es el bloque. 
 
-Este es simplemente un conjunto de información en texto plano que contiene los siguientes campos de información:
+Este es simplemente un conjunto de información en texto plano que contiene los siguientes campos que un bloque debe contener:
 	
 	indice - Muestra la posición del bloque en el orden que se añade al blockchain.
 	
@@ -134,7 +134,8 @@ Si buscamos en un explorador del blockchain de bitcoin:
  https://explorer.bit2me.com/btc/block/00000000839a8e6886ab5951d76f411475428afc90947ee320161bbf18eb6048 
 
 podemos encontrar el primer bloque de Bitcoin que fue verificado el 8 de enero del 2009. El bloque génesis conocido como Bloque \#0 fue minado unos días antes, el 3 de enero de 2009. 
-![[Pasted image 20220311130801.png]]
+
+![My Image](./adjuntos/Pasted%20image%2020220311130801.png)
 
 El bloque génesis contenia el siguiente texto como prueba de la fecha de su creación:
 
