@@ -152,7 +152,7 @@ Este problema computacional no guarda complejidad ni utilidad práctica. Usa la 
 
 Obtener el hash256 del bloque es un proceso matemático computacionalmente fácil de realizar, la dificultad consiste en ir probando distintos nonces hasta obtener un hash válido. No existe otra forma de encontrar el nonce, convirtiendose en una suerte de lotería encontrar un hash válido ya que depende del número de hashes por segundo que se puedan obtener. 
 
-Por esta razón mientras más aumenta el hashrate global de la red bitcoin, más aumentar la dificultad.
+Por esta razón mientras más aumenta el hash-rate global de la red bitcoin, más aumenta la dificultad.
 
 ![My Image](./adjuntos/Pasted%20image%2020220311131410.png)
 
@@ -162,15 +162,15 @@ La válidación consiste en verificar que el hash del bloque empieza con la mism
 
 ![My Image](./adjuntos/Pasted%20image%2020220311131452.png)
 
-###  Añadiendo bloques
+### Añadiendo bloques
 
-Cuando se cumple el criterio de dificultad, y la prueba de trabajo encuentra el nonce para el hash válido del bloque, se lo añade a la cadena. Cada vez que un bloque nuevo es creado contiene a todas transacciones pendientes anterior a ese bloque. 
+Cuando se cumple el criterio de dificultad y la prueba de trabajo encuentra el nonce para el hash válido del bloque, se lo añade a la cadena. Cada vez que un bloque nuevo es minado y añadido contiene todas transacciones pendientes anterior a ese bloque.
 
-En el ejemplo no existe un límite, pero en la implementación del core de Bitcoin un bloque tiene un tamaño máximo de 1 MB. Almacenando en cada bloque una cantidad limitada de transacciones. Aproximadamente se realizan 7 transacciones/segundo en promedio. 
+En el ejemplo no existe un límite pero en la implementación del core de Bitcoin, un bloque tiene un tamaño máximo de 1 MB. Almacenando en cada bloque una cantidad limitada de transacciones. Aproximadamente se realizan 7 transacciones/segundo (en promedio).
 
 ![My Image](./adjuntos/Pasted%20image%2020220311131516.png)
 
-Y una función con decorador para obtener el último bloque de la cadena de manera más directa.
+También se facilita con una función el obtener el último bloque válido de la cadena de manera más directa.
 
 ![My Image](./adjuntos/Pasted%20image%2020220311131540.png)
 
@@ -178,9 +178,9 @@ Y una función con decorador para obtener el último bloque de la cadena de mane
 
 Esta función añade transacciones para ser procesadas. Para lo cual se debe entregar cierta información:
 
-envia - Envía una cantidad de dinero
-recibe - Recibe la cantidad de dinero
-monto - La cantidad de dinero 
+	envia - Envía una cantidad de dinero
+	recibe - Recibe la cantidad de dinero
+	monto - La cantidad de dinero 
 
 ![My Image](./adjuntos/Pasted%20image%2020220311131621.png)
 
