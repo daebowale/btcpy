@@ -3,11 +3,9 @@ from time import time
 from hashlib import sha256
 from urllib.parse import urlparse
 
-
 def hash_bloque(self):
     bloque_encode = json.dumps(self).encode()
     return sha256(bloque_encode).hexdigest()
-
 
 class Bloque():
     def __init__(self, indice,hash_anterior,transacciones,tiempo,nonce):
@@ -22,7 +20,6 @@ class Bloque():
         self.transacciones = transacciones 
         self.tiempo = tiempo 
         self.nonce = nonce 
-        
 
 class Blockchain():
     dificultad = '000'
@@ -88,7 +85,6 @@ class Blockchain():
             self.chain = new_chain
             return True
         return False
-
 
     def valid_chain(self, chain):
         last_block = chain[0]

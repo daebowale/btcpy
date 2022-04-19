@@ -1,4 +1,6 @@
+
 # Blockchain.py
+
 
 En este estudio vamos a revisar como funciona la tecnología detrás del #blockchain de #Bitcoin aplicando #Python. Se mostrará como se podría implementar conceptualmente. 
 
@@ -79,7 +81,9 @@ Por simplicidad para este proyecto no abordamos como se representan las transacc
 
 ## core.py
 
+
 Vamos a explicar cada sección de código.
+
 
 ### Librerias
 
@@ -171,7 +175,7 @@ En el ejemplo no existe un límite pero en la implementación del core de Bitcoi
 ![My Image](./adjuntos/Pasted%20image%2020220311131516.png)
 
 También se facilita con una función el obtener el último bloque válido de la cadena de manera más directa.
-
+   
 ![My Image](./adjuntos/Pasted%20image%2020220311131540.png)
 
 ### Añadir transacciones

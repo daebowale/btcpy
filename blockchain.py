@@ -4,7 +4,6 @@ from time import time
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-
 class Transaccion(BaseModel):
     envia: str
     recibe: str
@@ -12,7 +11,6 @@ class Transaccion(BaseModel):
 
 class Nodo(BaseModel):
     nodes: str
-
 
 app = FastAPI()
 node_identifier = str(uuid4()).replace('-'," ")
